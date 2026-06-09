@@ -13,6 +13,7 @@ public class P25_factorial_Recursive {
             return a * R_Factorial(a - 1); // RECURSIVE CASE
     }
 
+    // main function
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
         System.out.print("Enter the number : ");

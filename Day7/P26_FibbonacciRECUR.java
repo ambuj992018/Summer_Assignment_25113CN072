@@ -17,6 +17,7 @@ public class P26_FibbonacciRECUR {
 
     }
 
+    // main function
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
         System.out.print("Enter number of terms :");

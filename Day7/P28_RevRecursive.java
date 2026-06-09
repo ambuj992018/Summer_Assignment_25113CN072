@@ -15,6 +15,7 @@ public class P28_RevRecursive {
         return reverse(a / 10, rev * 10 + a % 10);
     }
 
+    // MAIN FUNCTION
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
         System.out.print("Enter the number : ");

@@ -13,7 +13,7 @@ public class P27_Sum_of_Digits {
         return (a % 10 + sum(a / 10)); // Recursive case
     }
 
-    // main function
+    // MAIN FUNCTION
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
         System.out.print("Enter the number : ");
