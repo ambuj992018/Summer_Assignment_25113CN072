@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 //DEFINE CLASS
 public class P55_lar_second {
-
-    // MAIN FUNCTION
+    // main function
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
         System.out.print("Enter size of array : ");

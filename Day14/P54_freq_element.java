@@ -7,7 +7,7 @@ import java.util.Scanner;
 //DEFINE CLASS 
 public class P54_freq_element {
 
-    // MAIN FUNCTION
+    // main function
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
         System.out.print("Enter size of array : ");

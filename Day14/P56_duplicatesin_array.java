@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 //Define Class
 public class P56_duplicatesin_array {
-
+    // MAIN FUNCTION
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
         System.out.print("Enter size of array : ");
