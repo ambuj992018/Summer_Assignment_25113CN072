@@ -13,9 +13,24 @@ public class P91_ANAGRAMtestString {
         String str1 = Sc.nextLine();
         System.out.print("Enter the second String : ");
         String str2 = Sc.nextLine();
-        // TO STORE STRING AS ARRAY OF CHARACTERS
+
         char[] a = str1.toCharArray();
         char[] b = str2.toCharArray();
+
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] >= 'A' && a[i] <= 'Z') {
+                a[i] = (char) (a[i] + 32);
+            }
+
+        }
+
+        for (int i = 0; i < b.length; i++) {
+            if (b[i] >= 'A' && b[i] <= 'Z') {
+                b[i] = (char) (b[i] + 32);
+            }
+
+        }
+
         int errorCount = 0;
 
         if (a.length == b.length) {
@@ -23,32 +38,26 @@ public class P91_ANAGRAMtestString {
                 int counta = 0;
                 int countb = 0;
 
-                for (int j = i + 1; j < a.length; j++) {
-                    if (a[i] >= 'A' && a[i] <= 'Z') {
-                        if (a[i] == a[j] || a[i] == (a[j] - 32)) {
-                            counta++;
-                        }
-                    }
-                    if (a[i] >= 'a' && a[i] <= 'z') {
-                        if (a[i] == a[j] || a[i] == (a[j] + 32)) {
-                            counta++;
-                        }
-                    }
+                for (int j = 0; j < a.length; j++) {
 
-                    if (b[i] >= 'A' && b[i] <= 'Z') {
-                        if (b[i] == b[j] || b[i] == (b[j] - 32)) {
-                            countb++;
-                        }
-                    }
-                    if (b[i] >= 'a' && b[i] <= 'z') {
-                        if (b[i] == b[j] || b[i] == (b[j] + 32)) {
-                            countb++;
-                        }
+                    if (a[i] == a[j]) {
+                        counta++;
+
                     }
 
                 }
+
+                for (int j = 0; j < b.length; j++) {
+
+                    if (a[i] == b[j]) {
+                        countb++;
+                    }
+
+                }
+
                 if (counta != countb) {
                     errorCount++;
+                    break;
                 }
 
             }
@@ -63,7 +72,7 @@ public class P91_ANAGRAMtestString {
         }
 
         else {
-            System.out.print("It is not an ANAGRAM .");
+            System.out.print("IT is not an ANAGRAM .");
         }
 
         Sc.close();
